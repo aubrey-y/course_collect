@@ -1,0 +1,13 @@
+service: course-collect
+
+runtime: python37
+instance_class: B1
+basic_scaling:
+  max_instances: 1
+  idle_timeout: 60m
+entrypoint: gunicorn -b :$PORT app:app --timeout 3600
+env_variables:
+  PROJECT_ID: ${PROJECT_ID}
+  DEFAULT_PROJECT_ID: ${DEFAULT_PROJECT_ID}
+  APP_REGION: ${APP_REGION}
+  UPDATE_EXTRA_FIELDS: ${UPDATE_EXTRA_FIELDS}

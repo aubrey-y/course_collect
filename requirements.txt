@@ -1,0 +1,15 @@
+Flask==1.1.2
+wheel==0.34.2
+requests==2.24.0
+responses==0.10.15
+beautifulsoup4==4.9.1
+fake-useragent==0.1.11
+pytest==5.4.3
+pytz==2020.1
+firebase-admin==4.3.0
+pymysql==0.10.0
+google-cloud-storage==1.29.0
+google-cloud-scheduler==1.3.0
+google==3.0.0
+eventlet==0.25.2
+gunicorn==20.0.4
